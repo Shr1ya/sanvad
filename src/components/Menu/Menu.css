@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.topNavigation {
+    background: var(--neutral1);
+    height: 64px;
+    width: 100%;
+    display: flex;
+    box-shadow: 0px 3px 6px var(--neutral4);
+}
+
+.topNavigation .logo {
+    flex: 30%;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 8px 0 8px 32px;
+    display: inline-flex;
+}
+
+.logo h1 {
+    color: var(--neutral7);
+    font-size: 24px;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.logo hr {
+    height: 32px;
+    width: 2px;
+    border-width: 0;
+    background-color: var(--neutral7);
+    border-radius: 1px;
+    margin: 0 16px;
+}
+
+.adorLogo {
+    height: 48px;
+}
+
+.topNavigation .menuList {
+    flex: 70%;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 8px;
+    display: inline-flex;
+}
+
+.links {
+    display: inline-flex;
+    list-style-type: none;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 40px;
+    color: var(--neutral6);
+}
+
+.icons {
+    align-items: center;
+    justify-content: flex-end;
+    display: inline-flex;
+    font-size: 24px;
+    margin: 8px 16px;
+    color: var(--neutral6);
+}
+
+.input {
+    align-items: center;
+    justify-content: flex-end;
+    margin: 8px;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 0 32px;
+}
+
+.input input {
+    background: var(--neutral1);
+    border-style: none;
+    width: 232px;
+    padding: 2px;
+    border-bottom: 1px solid var(--neutral6);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+
+.input button {
+    font-size: 24px;
+    border-style: none;
+    background: var(--neutral1);
+    color: var(--neutral6);
+
+}

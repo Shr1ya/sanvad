@@ -1,0 +1,16 @@
+.rightSection {
+    background: red;
+    display: inline-flex;
+    margin: 16px;
+    float: right;
+}
+
+.leftSection {
+    float: left;
+}
+
+.table-btn {
+    margin: 16px;
+    padding: 16px;
+}
+

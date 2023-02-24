@@ -1,38 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  /*Neutral*/
+
+  --neutral1: #F3F4F6;
+  --neutral2: #DFE0E5;
+  --neutral3: #D1D3D9;
+  --neutral4: #AEB1B8;
+  --neutral5: #8E9094;
+  --neutral6: #808285;
+  --neutral7: #555259;
+  --neutral8: #3D3D3D;
+  --neutral9: #2B2B2B;
+  --neutral10: #1E1E1E;
+
+  /*Primary*/
+
+  --primary1: #ED1D24;
+  --primary2: #19345B;
+  --primary3: #2B58A4;
+  --primary4: #4880C2;
+  --primary5: #83BDE7;
+
+  /*Success*/
+
+  --success1: #DCF4E6;
+  --success2: #A9D9BC;
+  --success3: #70BF4C;
+  --success4: #00A959;
+  --success5: #00783D;
+
+  /*Warning*/
+
+  --warning1: #FFF5C7;
+  --warning2: #FFEA8F;
+  --warning3: #F0D351;
+  --warning4: #E1BC23;
+  --warning5: #D17528;
+
+  /*Error*/
+
+  --error1: #F491A7;
+  --error2: #EF3956;
+  --error3: #B52336;
+  --error4: #821A2C;
+  --error5: #461318;
+  --error6: #352020;
+
+  /*Background*/
+  --background1: #EEF2FC;
+
+  /*Shadow*/
+  --shadow1: #FFFFFF;
+  --shadow2: #2E2E2E;
+
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--neutral7);
+  font-family: 'Source Sans Pro','Josefin Sans';
+  background: var(--neutral1);
 }
 
-.App-link {
-  color: #61dafb;
+.App{
+    position: fixed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+

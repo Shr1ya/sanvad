@@ -1,0 +1,324 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form {
+    /* width: 100%; */
+    padding: 24px;
+    margin: 0px;
+}
+
+.details {
+    display: inline-table;
+    padding: 8px 26px;
+    background-color: transparent;
+    margin-top: 16px;
+}
+
+.label {
+    position: absolute;
+    pointer-events: none;
+    font-size: 14px;
+    color: var(--neutral7);
+    font-weight: 700;
+}
+
+.inputField {
+    height: 100%;
+    width: 224px;
+    background-color: transparent;
+    color: var(--neutral7);
+    outline: none;
+    border: 2px solid var(--neutral4);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 8px 16px;
+    margin-top: 24px;
+}
+
+textarea {
+    font-family: 'Source Sans Pro', 'Josefin Sans';
+}
+
+.dropDown {
+    height: 100%;
+    width: 304px;
+    background-color: transparent;
+    color: var(--neutral7);
+    outline: none;
+    border: 2px solid var(--neutral4);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px 24px;
+    margin-top: 24px;
+}
+
+.dropDown {
+    height: 100%;
+    background-color: transparent;
+    color: var(--neutral7);
+    outline: none;
+    border: 2px solid var(--neutral4);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px 48px 10px 24px;
+    margin-top: 24px;
+}
+
+.dob {
+    height: 100%;
+    background-color: transparent;
+    color: var(--neutral7);
+    outline: none;
+    border: 2px solid var(--neutral4);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px 48px;
+    margin-top: 24px;
+}
+
+hr {
+    border: 1px solid var(--primary1);
+    background-color: var(--primary1);
+    border-radius: 1px;
+    height: 0.3px;
+    margin-top: 16px;
+}
+
+.submitBtn {
+    color: var(--neutral1);
+    background-color: var(--neutral6);
+    font-size: 16px;
+    padding: 16px 56px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    border-radius: 8px;
+    border: none;
+    float: right;
+    align-items: flex-end;
+}
+
+.non-valid {
+    color: var(--primary1);
+    font-size: 10px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+}
+
+
+
+
+
+/* -------------------------------------
+            Homepage
+------------------------------------- */
+
+.homePage {
+    margin: 16px;
+}
+
+/* -------------------------------------
+            Conference Booking
+------------------------------------- */
+.radio-btn {
+    margin: 8px 0 0 0;
+}
+
+.radio-opts {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    margin-top: 8px;
+}
+
+.radio-opts label {
+    font-size: 14px;
+    color: var(--neutral7);
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+}
+
+/* -------------------------------------
+            Ticket Requester
+------------------------------------- */
+.row {
+    box-sizing: border-box;
+}
+
+.col-md {
+    float: left;
+    width: 50%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .col-md {
+        width: 100%;
+    }
+}
+
+#description {
+    display: inline-block;
+    outline: none;
+    font-size: 16px;
+    color: var(--neutral7);
+    font-weight: 400;
+    width: 160%;
+    min-height: 118.5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    resize: vertical;
+}
+
+textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+
+textarea::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
+
+/* Handle */
+
+textarea::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: var(--neutral7);
+
+}
+
+textarea::-webkit-scrollbar-thumb:window-inactive {
+    background: var(--neutral7);
+}
+
+
+
+
+
+/* -------------------------------------
+            Visitor Management
+------------------------------------- */
+
+.meals {
+    padding: 8px;
+    display: inline-flex;
+}
+
+.checkbox-opt {
+    margin: 8px 24px;
+    padding: 0 16px;
+}
+
+.checkbox-opt {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    margin-top: 8px;
+}
+
+.checkbox-opt label {
+    font-size: 14px;
+    color: var(--neutral7);
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox-opt input {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--primary1);
+    border-radius: 20%;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+}
+
+.checkbox-opt input::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    left: 8px;
+    width: 4px;
+    height: 12px;
+    border-radius: 20%;
+    border: 4px solid var(--primary1);
+    border-width: 0 3px 3px 0;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+}
+
+.checkbox-opt input:checked::before {
+    transform: rotate(45deg) scale(1);
+}
+
+.ppe {
+    padding-top: 10px;
+    padding-bottom: 9px;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: inline-flex;
+}
+
+.radio-opt {
+    margin: 8px 24px;
+}
+
+.radio-opt {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    margin-top: 8px;
+}
+
+.radio-opt label {
+    font-size: 14px;
+    color: var(--neutral7);
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+
+
+#visitorAssets {
+    height: 100%;
+    width: 224px;
+    background-color: transparent;
+    color: var(--neutral7);
+    outline: none;
+    border: 2px solid var(--neutral4);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 8px 16px;
+    margin-top: 24px;
+}
